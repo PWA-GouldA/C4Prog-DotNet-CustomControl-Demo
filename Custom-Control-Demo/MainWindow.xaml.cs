@@ -23,6 +23,21 @@ namespace Custom_Control_Demo
         public MainWindow()
         {
             InitializeComponent();
+            ChangeContent();
+        }
+
+        private void ChangeContent()
+        {
+            TitleLabel.Content = "TESTING";
+            ContentLabel.Content = "9876";
+
+            TestCard.CardTitle = "BOO";
+            TestCard.CardContent = "1234";
+            TestCard.CardBackground = "#FF00FF00";
+            TestCard.CardBorderColour = "#99000000";
+            TestCard.CardBorderWidth = "2";
+            TestCard.CardCornerRadius = "10";
+           
         }
     }
 }
